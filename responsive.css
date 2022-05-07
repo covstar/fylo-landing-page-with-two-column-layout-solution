@@ -1,0 +1,319 @@
+/* Responsive media queries */
+
+/* Mobile design */
+
+@media (max-width:720px){
+    /* header section */
+    header {
+        padding: 2rem;
+    }
+    .headings img{
+        width: 6rem;
+    }
+ 
+    /* nav-links */
+    
+    .nav-links p {
+        padding-left: 1.4rem;
+        font-size: .9rem;
+    }
+    /* heading */
+    .first-grid {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 
+        "img"
+        "txt";
+    }
+    
+    .left-text {
+        padding: 0;
+        grid-area: txt;
+    }
+    
+    .left-text h1 {
+        font-size: 1.8rem;
+        padding-top: 2rem;
+    }
+    
+    .left-text p {
+        font-size: .9rem;
+        line-height: 1.5;
+    }
+    
+    .left-text form {
+        display: block
+    }
+    .left-text form input {
+        padding: .8rem 0 .8rem 1rem;
+        width: 95%;
+        margin-right: 0;
+        margin-bottom: 1rem;
+    }
+    
+    .left-text form button {
+        padding: 1rem 0;
+        width: 100%;
+    }
+    
+    .right-image img {
+        width: 25rem;
+        grid-area: img;
+    }
+    /* Main section */
+    
+    .container {
+        padding: 5rem 2rem;
+        background-image: url(images/bg-curve-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 160rem 100rem;
+        background-position: top left -63rem;
+        display: grid;
+        column-gap: 0;
+        text-align: center;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-areas: 
+        "ig"
+        "ta"
+        "tdr";
+    }
+    /* text area */
+    .left-side{
+        grid-area: ta;
+    }
+    .testimonial{
+        grid-area: tdr;
+    }
+    /* image area */
+    .image{
+        grid-area: ig;
+    }
+    .image img {
+        width: 20rem;
+    }
+    .left-side h1 {
+        text-align: center;
+        font-size: 1.3rem;
+        padding-top: 3rem;
+    }
+    .first-para,
+    .second-para {
+        font-size: .9rem;
+        text-align: left;
+    }
+    /* arrow */
+    .arrow {
+        padding: 2rem 0 4rem;
+        font-size: .9rem;
+    }
+    /* testamonial */
+    .testimonial {
+        margin: auto;
+        width: 70%;
+        text-align: left;
+        
+    }
+    .testimonial p {
+        font-size: .8rem;
+
+    }
+    /* bottom section */
+    .second-container {
+        display: block;
+        text-align: center;
+    }
+    .get-access h2 {
+        font-size: 1.5rem;
+    }
+    
+    .get-access p {
+        padding: .7rem 0;
+        line-height: 1.7;
+        padding: 1.3rem 0;
+    }
+    /* Form button */
+    .get-started form input {
+        padding: 1rem 0rem 1rem 1rem;
+        width: 95%;
+    }
+    .get-started form button {
+        padding: 1rem 0rem;
+        width: 100%;
+    }
+    /* Footer section */
+    
+    footer {
+        padding: 4rem 2rem;
+    }
+    .grid-container {
+        padding-top: 2rem;
+        display: block;
+    }
+    /* links */
+    .links {
+      padding: 2rem 0;
+    }
+    /* Socials */
+    .socials {
+        grid-template-columns: repeat(3, 5rem);
+
+        text-align: center;
+        justify-content: center;
+    }
+    /* footer Attribution */
+    .attribution {
+        text-align: center;
+        padding: 4rem 0 0;
+        font-weight: 500;
+        color: hsl(224, 92%, 66%);
+        font-size: .8rem;
+    }
+}
+
+/* Tablet design */
+
+@media (max-width: 1290px) and (min-width:721px){
+    /* header section */
+    header {
+        padding: 2rem 2rem 5rem;
+    }
+    .headings img {
+        width: 6rem;
+    }
+    /* nav-links */
+    
+    .nav-links p {
+        padding-right: 0rem;
+        font-size: 1.1rem;
+    }
+    /* heading */
+    .first-grid {
+        display: grid;
+        text-align: center;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-areas:
+            "img"
+            "txt";
+    }
+    
+    .left-text {
+        padding: 0;
+        grid-area: txt;
+    }
+    
+    .left-text h1 {
+        font-size: 2.5rem;
+        line-height: 1.5;
+        padding-top: 2rem;
+    }
+    
+    .left-text p {
+        font-size: 1.1rem;
+        padding: 1rem 0 1.5rem;
+        line-height: 1.5;
+    }
+    
+    .left-text form {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .left-text form input {
+        padding: .8rem 0 .8rem 1rem;
+        width: 45%;
+        font-size: 1.3rem;
+    
+    }
+    
+    .left-text form button {
+        width: 50%;
+        font-size: 1.3rem;
+     
+    }
+    
+    .right-image img {
+        width: 20rem;
+        grid-area: img;
+    }
+    /* Main section */
+    
+    .container {
+        padding: 5rem 2rem;
+        background-image: url(images/bg-curve-mobile.svg);
+        background-repeat: no-repeat;
+        background-size: 160rem 100rem;
+        background-position: top left -54rem;
+        display: grid;
+        column-gap: 1.5rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas:
+            "ls img"
+            "ts  ts ";
+    }
+    
+    /* text area */
+    .left-side {
+        grid-area: ls;
+    }
+    .left-side h1{
+        font-size: 1.9rem;
+    }
+    .left-side p{
+        font-size: 1rem;
+    }
+    .arrow a{
+        font-size: 1rem;
+    }
+    .image{
+        grid-area: img;
+    }
+    .testimonial{
+        grid-area: ts;
+        margin: 2rem 20% 0;
+     
+    }
+    /* bottom section */
+    .second-container {
+        padding: 4rem 5rem;
+        display: block;
+        text-align: center;
+    }
+    .get-access p {
+
+        line-height: 1.6;
+        padding: 1.5rem 10%;
+    }
+    /* Form button */
+    .get-started form input {
+        font-size: .9rem;
+        padding: 1rem 15rem 1rem 1.5rem;
+        width: 10rem;
+    }
+    
+    .get-started form button {
+        width: 18.5rem;
+    }
+    /* Footer section */
+    footer {
+        padding: 5rem 3rem 4rem;
+    }
+    .grid-container {
+        display: grid;
+        column-gap: 5rem;
+        text-align: center;
+        grid-template-columns: 12rem 1fr 1fr 1fr;
+    }
+    /* contact */
+    .contact li {
+        font-size: .9rem;
+    }
+   
+    /* Socials */
+    .socials {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}
